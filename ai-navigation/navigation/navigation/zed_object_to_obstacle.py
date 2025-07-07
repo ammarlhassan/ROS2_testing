@@ -8,7 +8,7 @@ from rclpy.node import Node
 from rclpy.qos import QoSProfile, ReliabilityPolicy
 
 from navigation_interface.msg import Obstacle, ObstacleArray
-from zed_interfaces.msg import ObjectsStamped
+from zed_msgs.msg import ObjectsStamped
 from visualization_msgs.msg import Marker
 from std_msgs.msg import Header
 
