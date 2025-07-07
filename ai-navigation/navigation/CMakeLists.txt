@@ -11,9 +11,9 @@ find_package(ament_cmake_python REQUIRED)
 # Install this Python package via setup.py
 ament_python_install_package(${PROJECT_NAME})
 
-# (Optional) install your launch/ and rviz/ folders
+# Install only the launch/ folder (rviz/ removed since it doesn't exist)
 install(
-  DIRECTORY launch rviz
+  DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}
 )
 
