@@ -1,0 +1,4 @@
+bitstruct
+pyserial
+numpy
+networkx
