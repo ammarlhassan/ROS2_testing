@@ -9,7 +9,7 @@ print(sys.path)
 # Python based imports
 import math
 import networkx as nx
-import navigation.simple_gps_util as simple_gps_util
+from navigation import simple_gps_util as simple_gps_util
 
 # ROS based import
 import rclpy.node

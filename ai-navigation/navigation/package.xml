@@ -1,16 +1,35 @@
 <?xml version="1.0"?>
-<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>navigation</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="zanem@cox.net">interfaces</maintainer>
-  <license>TODO: License declaration</license>
+  <version>0.1.0</version>
+  <description>Graph-based global planner + pure-pursuit local planner for JACart2</description>
+  <license>Apache-2.0</license>
+  <maintainer email="you@your.org">Your Name</maintainer>
 
-  <test_depend>ament_copyright</test_depend>
-  <test_depend>ament_flake8</test_depend>
-  <test_depend>ament_pep257</test_depend>
-  <test_depend>python3-pytest</test_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- runtime dependencies -->
+  <build_depend>rclpy</build_depend>
+  <exec_depend>rclpy</exec_depend>
+  <build_depend>std_msgs</build_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <build_depend>nav_msgs</build_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+  <build_depend>navigation_interface</build_depend>
+  <exec_depend>navigation_interface</exec_depend>
+  <build_depend>motor_control_interface</build_depend>
+  <exec_depend>motor_control_interface</exec_depend>
+  <build_depend>networkx</build_depend>
+  <exec_depend>networkx</exec_depend>
+  <build_depend>bitstruct</build_depend>
+  <exec_depend>bitstruct</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
 
   <export>
     <build_type>ament_python</build_type>

@@ -10,6 +10,7 @@ from navigation import pure_pursuit, cubic_spline_planner
 
 # ROS based imports
 import rclpy
+import time
 from nav_msgs.msg import Path
 from navigation_interface.msg import (
     LocalPointsArray,
