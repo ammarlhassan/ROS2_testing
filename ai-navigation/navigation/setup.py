@@ -17,27 +17,15 @@ setup(
         ),
         (
             os.path.join("share", package_name, "rviz"),
-            glob(os.path.join("rviz", "*.rviz")),
+            glob(os.path.join("test", "*.rviz")),
         ),
     ],
-    install_requires=[
-        "setuptools",
-        "rclpy",
-        "std_msgs",
-        "visualization_msgs",
-        "navigation_interface",
-        "motor_control_interface",
-        "tf2_ros",
-        "tf2_geometry_msgs",
-        "tf_transformations",
-        "geometry_msgs",
-        "numpy",
-    ],
+    install_requires=["setuptools"],
     zip_safe=True,
     maintainer="interfaces",
     maintainer_email="zanem@cox.net",
-    description="ROS 2 navigation nodes for JACart2",
-    license="MIT",
+    description="TODO: Package description",
+    license="TODO: License declaration",
     tests_require=["pytest"],
     entry_points={
         "console_scripts": [
@@ -49,9 +37,7 @@ setup(
             "speed_node = navigation.speed_node:main",
             "obstacle_converter = navigation.zed_object_to_obstacle:main",
             "collision_detector = navigation.collision_detector:main",
-            "display_global_path = navigation.display_global_path:main",
-            "pose_bridge = navigation.pose_bridge:main",
-            "lidar_object_to_obstacle = navigation.lidar_object_to_obstacle:main",
+            "display_global_path = navigation.display_global_path:main"
         ],
     },
 )
